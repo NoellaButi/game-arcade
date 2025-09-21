@@ -87,7 +87,7 @@ python -m games.mboka_quiz
 
 This arcade is deployed on Streamlit Cloud:
 
-👉 Try it here
+👉 [Try it here](https://game-arcade-noellabuti.streamlit.app)
 
 📜 License
 
