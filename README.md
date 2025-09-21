@@ -5,7 +5,7 @@ Play 10 classic mini-games in one place — via **Streamlit web app** or **CLI**
 ![App](https://img.shields.io/badge/app-Streamlit-red.svg) 
 ![Modes](https://img.shields.io/badge/modes-CLI%20%2B%20Web-7957D5.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://game-arcade-noellabuti.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://game-arcade-noella-buti.streamlit.app)
 
 ---
 
