@@ -20,7 +20,7 @@ All games live in `games/` with a common interface (`play_cli()` and `render_st(
 🎮 **Included Games**  
 - 🎲 Dice Roller — roll N dice with ASCII art  
 - ❤️ Nine Lives — word guessing with no-repeat deck  
-- 🇨🇩 Mboka Quiz (DRC) — 100 questions with explanations & images  
+- 🧪 Mboka Quiz (DRC) — 100 questions with explanations & images  
 - 🎰 Slot Machine — 3-reel with credits & payouts  
 - 🔢 Number Guess — hot/warm/cold + higher/lower hints  
 - ✊✋✌️ Rock–Paper–Scissors — best of 5 vs computer  
