@@ -1,0 +1,5 @@
+# Core
+streamlit>=1.34
+
+black==24.8.0      # formatting
+pytest==8.3.3      # unit testing

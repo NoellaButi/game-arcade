@@ -1,0 +1,14 @@
+# venv
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+**/.DS_Store
