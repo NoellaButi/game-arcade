@@ -14,7 +14,7 @@ ROUTES = {
     "🔢 Number Guess": number_guess,
     "✊✋✌️ Rock-Paper-Scissors": rps,
     "🤖 Robot Builder": robot_builder,
-    "⭕❌ Tic-Tac-Toe (minimax)": tictactoe,
+    "⭕❌ Tic-Tac-Toe": tictactoe,
     "🧠 Memory": memory,
     "🃏 Blackjack": blackjack
 }
