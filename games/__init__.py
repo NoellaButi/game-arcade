@@ -1,5 +1,4 @@
 # __init__.py
-
 from . import dice_roller as dice_roller
 from . import nine_lives as nine_lives
 from . import mboka_quiz as mboka_quiz
@@ -12,6 +11,14 @@ from . import memory as memory
 from . import blackjack as blackjack
 
 __all__ = [
-    "dice_roller", "nine_lives", "mboka_quiz", "slot_machine",
-    "number_guess", "rps", "robot_builder", "tictactoe", "memory", "blackjack",
+    "dice_roller",
+    "nine_lives",
+    "mboka_quiz",
+    "slot_machine",
+    "number_guess",
+    "rps",
+    "robot_builder",
+    "tictactoe",
+    "memory",
+    "blackjack",
 ]
