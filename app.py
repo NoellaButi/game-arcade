@@ -9,7 +9,7 @@ from games import (dice_roller, nine_lives, mboka_quiz, slot_machine, number_gue
 ROUTES = {
     "🎲 Dice Roller": dice_roller,
     "❤️ Nine Lives": nine_lives,
-    "🧪 DRC Quiz (MCQ)": mboka_quiz,
+    "🇨🇩 DRC Quiz (MCQ)": mboka_quiz,
     "🎰 Slot-Machine": slot_machine,
     "🔢 Number Guess": number_guess,
     "✊✋✌️ Rock-Paper-Scissors": rps,
