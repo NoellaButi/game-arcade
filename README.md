@@ -1,9 +1,10 @@
 # Game Arcade 🎮✨  
 A Python-based **Arcade Hub** featuring 10+ mini-games — playable from a single launcher.
 
-![Language](https://img.shields.io/badge/language-Python-blue.svg)
+![Language](https://img.shields.io/badge/language-Python-blue.svg) 
 ![Framework](https://img.shields.io/badge/framework-Tkinter%2FPygame-orange.svg) 
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) 
+![CI](https://github.com/NoellaButi/game-arcade/actions/workflows/ci.yml/badge.svg?branch=main)
 
 ![Arcade Home](docs/game_arcade_overview.png)  
 
@@ -70,20 +71,23 @@ game-arcade/
 - 🧠 Memory — flip and match card pairs
 - 🃏 Blackjack — card game against dealer
 
-👉 Example Screenshots:
+## 📷 Screenshots
 
-![Dice Roller](docs/dice_roller_demo.png)  
-![Arcade Home](docs/nine_lives_demo.png)  
-![Arcade Home](docs/mboka_quiz_demo.png)  
-![Arcade Home](docs/slot_machine_demo.png)  
-![Arcade Home](docs/number_guess_demo.png)  
-![Arcade Home](docs/rps_demo.png)  
-![Arcade Home](docs/robot_builder_demo.png)  
-![Arcade Home](docs/tictactoe_demo.png)  
-![Arcade Home](docs/memory_demo.png)  
-![Arcade Home](docs/blackjack_demo.png)  
+| Dice Roller | Nine Lives | Mboka Quiz |
+|-------------|------------|------------|
+| ![Dice Roller](docs/dice_roller_demo.png) | ![Nine Lives](docs/nine_lives_demo.png) | ![Mboka Quiz](docs/mboka_quiz_demo.png) |
 
+| Slot Machine | Number Guess | Rock-Paper-Scissors |
+|--------------|--------------|---------------------|
+| ![Slot Machine](docs/slot_machine_demo.png) | ![Number Guess](docs/number_guess_demo.png) | ![RPS](docs/rps_demo.png) |
 
+| Robot Builder | Tic-Tac-Toe | Memory |
+|---------------|-------------|--------|
+| ![Robot Builder](docs/robot_builder_demo.png) | ![TicTacToe](docs/tictactoe_demo.png) | ![Memory](docs/memory_demo.png) |
+
+| Blackjack |
+|-----------|
+| ![Blackjack](docs/blackjack_demo.png) |
 
 
 ## 🔮 Roadmap
