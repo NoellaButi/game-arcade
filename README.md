@@ -1,48 +1,51 @@
-# Game Arcade 🕹️🎲  
-Play 10 classic mini-games in one place — via **Streamlit web app** or **CLI**.
+# Game Arcade 🎮✨  
+A Python-based **Arcade Hub** featuring 10+ mini-games — playable from a single launcher.
 
-![Language](https://img.shields.io/badge/language-Python-blue.svg) 
-![App](https://img.shields.io/badge/app-Streamlit-red.svg) 
-![Modes](https://img.shields.io/badge/modes-CLI%20%2B%20Web-7957D5.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg) 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://game-arcade-noella-buti.streamlit.app)
+![Language](https://img.shields.io/badge/language-Python-blue.svg)
+![Framework](https://img.shields.io/badge/framework-Tkinter%2FPygame-orange.svg) 
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
----
-
-✨ **Overview**  
-
-This project is a modular **mini-game arcade** where each game works in **two modes**:  
-- 🖥️ **Streamlit app** — play in the browser  
-- 💻 **CLI mode** — run each game standalone in the terminal  
-
-All games live in `games/` with a common interface (`play_cli()` and `render_st(st)`), making the code clean, reusable, and expandable.  
-
-🎮 **Included Games**  
-- 🎲 Dice Roller — roll N dice with ASCII art  
-- ❤️ Nine Lives — word guessing with no-repeat deck  
-- 🧪 Mboka Quiz (DRC) — 100 questions with explanations & images  
-- 🎰 Slot Machine — 3-reel with credits & payouts  
-- 🔢 Number Guess — hot/warm/cold + higher/lower hints  
-- ✊✋✌️ Rock–Paper–Scissors — best of 5 vs computer  
-- 🤖 Robot Builder — budget build with live SVG robot preview  
-- ⭕❌ Tic-Tac-Toe (minimax) — unbeatable AI  
-- 🧠 Memory — 4×4 concentration with move counter  
-- 🃏 Blackjack — single-deck, dealer hits to 17  
+👉 **Screenshots:**  
+![Arcade Home](docs/game_arcade_overview.png)  
 
 ---
 
-🛠️ **Workflow**  
+## ✨ Overview
+**Game Arcade** is a fun Python project bundling multiple interactive games into one app.  
+It demonstrates Python scripting, object-oriented design, and simple game logic with a clean launcher.
 
-- Build each game as a module inside `games/`  
-- Import modules into `app.py` to auto-register in Streamlit sidebar  
-- Use `st.session_state` for per-game state handling  
-- Deploy via Streamlit Cloud (1-click)  
+---
 
-📁 **Repository Layout**  
+## 🔍 Features
+- 🎮 Multiple games under one roof
+- 🖥️ Easy launcher with menu navigation
+- 🃏 Randomized outcomes for variety
+- 📷 Simple graphics/screenshots for a visual experience
+- 💾 Modular design — each game in its own script
+
+---
+
+## 🚦 Quickstart
+```bash
+# Clone the repo
+git clone https://github.com/NoellaButi/game-arcade.git
+cd game-arcade
+
+# Create venv & install requirements
+python -m venv .venv
+source .venv/bin/activate   # Windows: .\.venv\Scripts\activate
+pip install -r requirements.txt
+
+# Launch Arcade
+python app.py
+```
+
+## 📁 Repository Layout
 ```bash
 game-arcade/
-├─ app.py             # Streamlit hub
-├─ games/             # all 10 games
+├─ app.py              # Main launcher
+├─ requirements.txt    # Dependencies
+├─ games/              # Individual games
 │  ├─ dice_roller.py
 │  ├─ nine_lives.py
 │  ├─ mboka_quiz.py
@@ -53,42 +56,43 @@ game-arcade/
 │  ├─ tictactoe.py
 │  ├─ memory.py
 │  └─ blackjack.py
-├─ requirements.txt   # streamlit>=1.34
-├─ .gitignore
-├─ README.md
-└─ LICENSE
+└─ docs/               # Screenshots/demos
 ```
 
-🚦 **Demo**
+🎲 Games Included
+- 🎲 Dice Roller — roll dice and get instant results
+- 🐱 Nine Lives — guess the hidden word with limited tries
+- 🌍 Mboka Quiz — DRC-themed quiz (geography, culture, history)
+- 🎰 Slot Machine — spin reels and test your luck
+- 🔢 Number Guess — guess the secret number
+- ✊ Rock-Paper-Scissors — classic hand game vs computer
+- 🤖 Robot Builder — assemble a random robot
+- ❌ Tic-Tac-Toe — play vs CPU or friend
+- 🧠 Memory — flip and match card pairs
+- 🃏 Blackjack — card game against dealer
 
-Run locally:
+👉 Example Screenshots:
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+![Dice Roller](docs/dice_roller_demo.png)  
+![Arcade Home](docs/nine_lives_demo.png)  
+![Arcade Home](docs/mboka_quiz_demo.png)  
+![Arcade Home](docs/slot_machine_demo.png)  
+![Arcade Home](docs/number_guess_demo.png)  
+![Arcade Home](docs/rps_demo.png)  
+![Arcade Home](docs/robot_builder_demo.png)  
+![Arcade Home](docs/tictactoe_demo.png)  
+![Arcade Home](docs/memory_demo.png)  
+![Arcade Home](docs/blackjack_demo.png)  
 
-Run a specific game (CLI):
-```bash
-python -m games.blackjack
-python -m games.mboka_quiz
-```
 
-🔍 **Features**
 
-- 10 self-contained games in one hub
-- Streamlit UI + CLI fallback
-- Randomized logic (non-repeating words in Nine Lives)
-- SVG-based robot builder with real illustration
-- Quiz with explanations & images always shown
-- Expandable: drop new `games/foo.py` with the 2 functions, and it just works
 
-🚀 **Deployment**
+## 🔮 Roadmap
+- Add multiplayer mode (online/local)
+- Add scoreboards & persistence
+- Improve GUI with animations
 
-This arcade is deployed on Streamlit Cloud:
+## 📜 License
+MIT (see LICENSE)
 
-👉 [Try it here](https://game-arcade-noellabuti.streamlit.app)
-
-📜 License
-
-MIT (see [LICENSE](LICENSE))
+---
