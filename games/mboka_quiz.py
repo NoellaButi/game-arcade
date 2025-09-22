@@ -264,16 +264,6 @@ SECTIONS: Dict[str, Dict[str, object]] = {
     ]},
 }
 
-# -------------------- IMAGES (PNG/JPG only; Streamlit can display these) --------------------
-IMAGES: Dict[Tuple[str, int], str] = {
-    ("A", 0): "https://upload.wikimedia.org/wikipedia/commons/2/2b/DR_Congo_in_Africa_%28claimed%29_%28compact%29_%28%2Ball_claims%29.png",
-    ("A", 4): "https://upload.wikimedia.org/wikipedia/commons/5/5b/Congo_River_meanders.jpg",
-    ("A", 14): "https://upload.wikimedia.org/wikipedia/commons/7/71/Mountain_gorilla_in_Virunga.jpg",
-    ("B", 1): "https://upload.wikimedia.org/wikipedia/commons/2/2a/Patrice_Lumumba%2C_square.jpg",
-    ("D", 0): "https://upload.wikimedia.org/wikipedia/commons/7/7b/Cobalt_chunk.jpg",
-    ("E", 2): "https://upload.wikimedia.org/wikipedia/commons/6/60/Poulet_moambe.jpg",
-}
-
 # -------------------- CLI MODE --------------------
 def _ask_block_cli(block_key: str):
     block: List[QItem] = SECTIONS[block_key]["questions"]  # type: ignore
@@ -356,14 +346,6 @@ def render_st(st):
         k, j, qi = stream[i]
         st.subheader(f"{'ALL ' if sec_key=='ALL' else ''}Q{i+1} — Section {k}: {qi.q}")
 
-        # ALWAYS show image if we have one (no toggle)
-        img_url = IMAGES.get((k, j))
-        if img_url:
-            try:
-                st.image(img_url, use_container_width=True)
-            except Exception:
-                st.info("Image unavailable. (Use PNG/JPG, not SVG.)")
-
         choice = st.radio("Options", qi.opts, key=f"q_{i}")
         col1, col2 = st.columns(2)
         if col1.button("Submit", key=f"submit_{i}"):
@@ -393,7 +375,7 @@ def render_st(st):
             st.rerun()
 
         st.progress((i+1) / len(stream))
-        st.caption(f"Score so far: {st.session_state.score}/{i}")
+        st.caption(f"Score so far: {st.session_state.score}/{i if i>0 else 1}")
     else:
         st.success(f"Finished! Final Score: {st.session_state.score}/{len(stream)}")
         if st.button("Restart"):
