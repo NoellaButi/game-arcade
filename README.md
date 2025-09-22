@@ -5,7 +5,6 @@ A Python-based **Arcade Hub** featuring 10+ mini-games — playable from a singl
 ![Framework](https://img.shields.io/badge/framework-Tkinter%2FPygame-orange.svg) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-👉 **Screenshots:**  
 ![Arcade Home](docs/game_arcade_overview.png)  
 
 ---
