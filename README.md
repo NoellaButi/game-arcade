@@ -96,6 +96,6 @@ game-arcade/
 - Improve GUI with animations
 
 ## 📜 License
-MIT (see LICENSE)
+MIT (see [LICENSE](LICENSE))
 
 ---
