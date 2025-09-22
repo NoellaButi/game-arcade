@@ -13,8 +13,6 @@ class QItem:
     links: Optional[List[str]] = None  # optional "learn more" links
 
 # -------------------- QUESTION BANK --------------------
-# NOTE: Provinces use the *current* names (post-2015 découpage):
-# e.g., Lualaba, Haut-Katanga, Tanganyika, Haut-Lomami, Lomami, Kasaï-Oriental, Kasaï-Central, etc.
 SECTIONS: Dict[str, Dict[str, object]] = {
     "A": {"title": "Geography & Nature (20)", "questions": [
         QItem("Where is the DRC located?", ["West Africa","Central Africa","North Africa","Southern Africa"], "Central Africa",
@@ -267,7 +265,6 @@ SECTIONS: Dict[str, Dict[str, object]] = {
 }
 
 # -------------------- IMAGES (PNG/JPG only; Streamlit can display these) --------------------
-# Only a handful are included to keep bandwidth light; add more if you like.
 IMAGES: Dict[Tuple[str, int], str] = {
     ("A", 0): "https://upload.wikimedia.org/wikipedia/commons/2/2b/DR_Congo_in_Africa_%28claimed%29_%28compact%29_%28%2Ball_claims%29.png",
     ("A", 4): "https://upload.wikimedia.org/wikipedia/commons/5/5b/Congo_River_meanders.jpg",
@@ -322,7 +319,7 @@ def play_cli():
 
 # -------------------- STREAMLIT MODE --------------------
 def render_st(st):
-    st.header("🇨🇩 DRC Quiz — MCQ (Images always on)")
+    st.header("🇨🇩 DRC Quiz — MCQ")
 
     # init state
     if "sec_key" not in st.session_state:
