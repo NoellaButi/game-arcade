@@ -274,7 +274,6 @@ def _ask_block_cli(block_key: str):
             print(f"  {i}. {o}")
         g = input("Answer (1-4): ").strip()
         ok = g.isdigit() and 1 <= int(g) <= len(qi.opts) and qi.opts[int(g)-1] == qi.ans
-        chosen = qi.opts[int(g)-1] if g.isdigit() and 1 <= int(g) <= len(qi.opts) else None
         if ok:
             print("✅ Correct!")
             score += 1
@@ -292,7 +291,8 @@ def play_cli():
     for k in keys:
         print(f"{k}: {SECTIONS[k]['title']}")  # type: ignore
     pick = input(f"Choose a section ({'/'.join(keys)} or ALL): ").strip().upper()
-    total = 0; count = 0
+    total = 0
+    count = 0
     if pick == "ALL":
         for k in keys:
             print(f"\n=== Section {k}: {SECTIONS[k]['title']} ===")  # type: ignore
